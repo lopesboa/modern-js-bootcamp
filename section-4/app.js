@@ -15,7 +15,7 @@ if (rating === 3) {
 } else if (rating === 1) {
   console.log("NEEDS IMPROVEMENT");
 } else {
-  console.log("INVALID RATING!");
+  // console.log("INVALID RATING!");
 }
 
 //Exemple 2
@@ -23,12 +23,12 @@ let highScore = 1430;
 let userScore = 1300;
 
 if (userScore >= highScore) {
-  console.log(`Congrats, you have new high score of ${userScore}`);
+  // console.log(`Congrats, you have new high score of ${userScore}`);
   highScore = userScore;
 } else {
-  console.log(
-    `Good Game. Your score of ${userScore} did not beat the high score ${highScore}`
-  );
+  // console.log(
+  //   `Good Game. Your score of ${userScore} did not beat the high score ${highScore}`
+  // );
 }
 
 //exemple 3 - Nestnig Conditionals
@@ -36,12 +36,12 @@ let password = "teste321";
 
 if (password.length >= 6) {
   if (password.indexOf(" ") === -1) {
-    console.log("Valid Password");
+    // console.log("Valid Password");
   } else {
-    console.log("Password is long enough, but cannot contain spaces");
+    // console.log("Password is long enough, but cannot contain spaces");
   }
 } else {
-  console.log("Password must be longer");
+  // console.log("Password must be longer");
 }
 
 // Exemple 4 - TRUTHY & FALSY VALUES
@@ -60,7 +60,64 @@ if (password.length >= 6) {
 let mystery = 5;
 
 if (mystery) {
-  console.log("TRUTHY");
+  // console.log("TRUTHY");
 } else {
-  console.log("FALSY");
+  // console.log("FALSY");
+}
+
+/**
+ * LOGICAL OPERATORS
+ */
+
+// AND (&&)
+let passwords = "minhasenha";
+
+if (passwords.length >= 8 && passwords.indexOf(" ") === -1) {
+  // console.log("VALID PASSWORD");
+} else {
+  // console.log("INVALID PASSWORD");
+}
+
+// exemple 2
+let num = 3;
+if (num >= 1 && num <= 10) {
+  // console.log("Number is between 1 and 10");
+} else {
+  // console.log("Please guess a number between 1 and 10");
+}
+
+// exemple 3
+// OR (||)
+let age = 30;
+
+if (age < 6 || age >= 65) {
+  // console.log("YOU GET IN FOR FREE");
+} else {
+  // console.log("YOU MUST PAYYYY!");
+}
+
+// exemple 4
+let color = "purple";
+
+if (color === "purple" || color === "lilac" || color === "violet") {
+  // console.log("GREAT CHOICE");
+}
+
+// NOT (!)
+let loggedInUser;
+
+if (!loggedInUser) {
+  console.log("GET OUT OF HERE");
+}
+
+// exemple 2
+
+let flavor = "grepe";
+
+// if (flavor !== "grepe" && flavor !== "cherry") {
+//   console.log("WE DON'T HAVE THAT FLAVOR!");
+// }
+
+if (!(flavor === "grepe" && flavor === "cherry")) {
+  console.log("WE DON'T HAVE THAT FLAVOR");
 }
