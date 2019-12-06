@@ -1,0 +1,23 @@
+{
+  "name": "modern-js-bootcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^6.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lopesboa/modern-js-bootcamp.git"
+  },
+  "author": "lopesboa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lopesboa/modern-js-bootcamp/issues"
+  },
+  "homepage": "https://github.com/lopesboa/modern-js-bootcamp#readme"
+}
