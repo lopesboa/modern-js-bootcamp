@@ -6,4 +6,6 @@
 
 ## 3 - How to Model Data Efficiently.
 
-## 4 - Controlling Program Logic And Flow
+## 4 - Controlling Program Logic And Flow.
+
+## 5 - Capture Colletions Of Data With Arrays.
