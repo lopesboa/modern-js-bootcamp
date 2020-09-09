@@ -1,11 +1,3 @@
-# The New Modern Javascrip Bootcamp 2020
+# The New Modern Javascript BootCamp 2020
 
-## 1 - Introdution.
-
-## 2 - JS Values & Variables.
-
-## 3 - How to Model Data Efficiently.
-
-## 4 - Controlling Program Logic And Flow.
-
-## 5 - Capture Colletions Of Data With Arrays.
+This is a repository used to store all code that I learn in the Colt & Stephen Modern JS bootcamp course.
