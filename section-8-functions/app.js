@@ -49,24 +49,24 @@
 // }
 
 // REFATORADO 1.3
-function isValidPassword(password, username) {
-  const tooShort = password.length < 8;
-  const hasSpace = password.indexOf(" ") !== -1;
-  const tooSimilar = password.indexOf(username) !== -1;
+function isValidPassword (password, username) {
+  const tooShort = password.length < 8
+  const hasSpace = password.indexOf(' ') !== -1
+  const tooSimilar = password.indexOf(username) !== -1
 
-  return !tooShort && !hasSpace && !tooSimilar;
+  return !tooShort && !hasSpace && !tooSimilar
 }
 /**
   Write a function to find the average value
   In an array of number
 */
 
-function average(arr) {
-  let total = 0;
+function average (arr) {
+  let total = 0
   for (num of arr) {
-    total += num;
+    total += num
   }
-  return total / arr.length;
+  return total / arr.length
 }
 
 /**
@@ -92,14 +92,14 @@ function average(arr) {
 // }
 
 // OPTION 2
-function isPangram(setence) {
-  for (let char of "abcdefghijklmnopqrstuvwxyz") {
+function isPangram (setence) {
+  for (const char of 'abcdefghijklmnopqrstuvwxyz') {
     if (!setence.includes(char)) {
-      return false;
+      return false
     }
   }
 
-  return true;
+  return true
 }
 
 /**
@@ -143,32 +143,32 @@ function isPangram(setence) {
 // }
 
 // OPTION 2
-function pickRandom(arr) {
-  const idx = Math.floor(Math.random() * arr.length);
-  return arr[idx];
+function pickRandom (arr) {
+  const idx = Math.floor(Math.random() * arr.length)
+  return arr[idx]
 }
 
-function getCard() {
+function getCard () {
   const values = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "J",
-    "Q",
-    "K",
-    "A"
-  ];
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '10',
+    'J',
+    'Q',
+    'K',
+    'A'
+  ]
   // const value = pickRandom(values);
 
-  const suits = ["clubs", "spades", "hearts", "diamonds"];
+  const suits = ['clubs', 'spades', 'hearts', 'diamonds']
   // const suit = pickRandom(suits);
 
-  return { value: pickRandom(values), suit: pickRandom(suits) };
+  return { value: pickRandom(values), suit: pickRandom(suits) }
 }
